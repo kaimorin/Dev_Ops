@@ -30,4 +30,6 @@ public class VehiculoRequest {
 
     @NotNull(message = "La disponibilidad es obligatoria")
     private Boolean disponible;
+
+    
 }

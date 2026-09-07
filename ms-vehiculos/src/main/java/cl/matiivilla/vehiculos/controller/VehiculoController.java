@@ -37,6 +37,7 @@ public class VehiculoController {
     @ResponseStatus(HttpStatus.CREATED)
     @Operation(summary = "Crear un vehículo nuevo")
     public VehiculoResponse create(@Valid @RequestBody VehiculoRequest request) {
+        System.out.println("auto añadido");
         return vehiculoService.create(request);
     }
 
@@ -52,4 +53,6 @@ public class VehiculoController {
         vehiculoService.delete(id);
         return ResponseEntity.noContent().build();
     }
+
+    
 }
