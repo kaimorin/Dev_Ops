@@ -14,6 +14,7 @@ public class HomeController {
     @GetMapping("/")
     @Operation(summary = "Información de la API")
     public Map<String, String> home() {
-        return Map.of("mensaje", "Api-vehiculos, Version 2.0.0");
+        return Map.of("mensaje", "Api-vehiculos, Version 2.0.0,Desarrollado por byron e yvanni");
+        
     }
 }
